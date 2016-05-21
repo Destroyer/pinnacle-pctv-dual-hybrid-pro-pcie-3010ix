@@ -1,0 +1,354 @@
+; Copyright 2009 BlackGold Technology
+
+[Version]
+signature           = "$CHICAGO$" ;all windows os
+Class               = MEDIA
+ClassGUID           = {4d36e96c-e325-11ce-bfc1-08002be10318}
+Provider            = %PROVIDER%
+DriverVer           = 01/16/2009,6.0.0.49
+CatalogFile.NTX86   = BGTCap.cat
+CatalogFile.NTAMD64 = BGTCap64.cat
+
+[Manufacturer]
+%PROVIDER% = SupportedBoards, NTx86, NTamd64
+
+;---> 32 BIT SUPPORT <---
+[SupportedBoards.NTx86]
+%60Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7160
+%61Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7161
+%62Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7162
+%31Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7231
+%31Hybrid.DeviceDesc% = BGT7231_0001,PCI\VEN_1131&DEV_7231&SUBSYS_00011131
+%31Hybrid.DeviceDesc% = BGT7231_0002,PCI\VEN_1131&DEV_7231&SUBSYS_00021131
+%31Hybrid.DeviceDesc_MINICARD%    = BGT7231_0003,PCI\VEN_1131&DEV_7231&SUBSYS_00031131
+
+;---> 64 BIT SUPPORT <---
+[SupportedBoards.NTAMD64]
+%60Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7160
+%61Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7161
+%62Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7162
+%31Hybrid.DeviceDesc% = BGTCap,PCI\VEN_1131&DEV_7231
+%31Hybrid.DeviceDesc% = BGT7231_0001,PCI\VEN_1131&DEV_7231&SUBSYS_00011131
+%31Hybrid.DeviceDesc% = BGT7231_0002,PCI\VEN_1131&DEV_7231&SUBSYS_00021131
+%31Hybrid.DeviceDesc_MINICARD%    = BGT7231_0003,PCI\VEN_1131&DEV_7231&SUBSYS_00031131
+
+[SourceDisksNames]
+1 = %AVSTRM_INSTALLATION_DISK%,,
+
+[SourceDisksFiles]
+716xCoInstaller.dll              = 1
+BGTMV32.dll                      = 1
+BGTMV64.dll                      = 1
+BGTCap.sys                       = 1
+BGTCap64.sys                     = 1
+11317231_00000000_1.bin          = 1
+11317231_00000000_a.bin          = 1
+11317231_00011131_1.bin          = 1
+11317231_00011131_a.bin          = 1
+11317231_00011131_8a.bin         = 1
+11317231_00021131_1.bin          = 1
+11317231_00021131_1_dvbtdvbs.bin = 1
+11317231_00021131_1_atvdvbt.bin  = 1
+11317231_00021131_1_atvdvbs.bin  = 1
+11317231_00031131_a.bin          = 1
+11317231_00031131_8a.bin         = 1
+
+[DestinationDirs]
+BGTCap.CopyCoInst.NTx86      = 11
+BGTCap.CopyDll.NTx86         = 11
+BGTCap.CopyBSL.NTx86         = 10
+BGT7231_0001.CopyBSL.NTx86   = 10
+BGT7231_0002.CopyBSL.NTx86   = 10
+BGT7231_0003.CopyBSL.NTx86   = 10
+BGTCap.CopyFiles.NTx86       = 10,system32\drivers
+BGTCap.CopyDll.NTAMD64       = 11
+BGTCap.CopyBSL.NTAMD64       = 10
+BGT7231_0001.CopyBSL.NTAMD64 = 10
+BGT7231_0002.CopyBSL.NTAMD64 = 10
+BGT7231_0003.CopyBSL.NTAMD64 = 10
+BGTCap.CopyFiles.NTAMD64     = 10,system32\drivers
+
+[BGTCap.CopyCoInst.NTx86]
+716xCoInstaller.dll
+
+[BGTCap.CopyFiles.NTx86]
+BGTCap.sys
+
+[BGTCap.CopyBSL.NTx86]
+11317231_00000000_1.bin
+11317231_00000000_a.bin
+
+[BGT7231_0001.CopyBSL.NTx86]
+11317231_00011131_1.bin
+11317231_00011131_a.bin
+11317231_00011131_8a.bin
+
+[BGT7231_0002.CopyBSL.NTx86]
+11317231_00021131_1.bin
+11317231_00021131_1_dvbtdvbs.bin
+11317231_00021131_1_atvdvbt.bin
+11317231_00021131_1_atvdvbs.bin
+
+[BGT7231_0003.CopyBSL.NTx86]
+11317231_00031131_a.bin
+11317231_00031131_8a.bin
+
+[BGTCap.CopyFiles.NTAMD64]
+BGTCap64.sys
+
+[BGTCap.CopyDll.NTx86]
+BGTMV32.dll
+
+[BGTCap.CopyDll.NTAMD64]
+BGTMV64.dll
+
+[BGTCap.CopyBSL.NTAMD64]
+11317231_00000000_1.bin
+11317231_00000000_a.bin
+
+[BGT7231_0001.CopyBSL.NTAMD64]
+11317231_00011131_1.bin
+11317231_00011131_a.bin
+11317231_00011131_8a.bin
+
+[BGT7231_0002.CopyBSL.NTAMD64]
+11317231_00021131_1.bin
+11317231_00021131_1_dvbtdvbs.bin
+11317231_00021131_1_atvdvbt.bin
+11317231_00021131_1_atvdvbs.bin
+
+[BGT7231_0003.CopyBSL.NTAMD64]
+11317231_00031131_a.bin
+11317231_00031131_8a.bin
+
+;
+;*** initialization and registry entries
+;
+
+[BGTCap.ntx86.CoInstallers]
+CopyFiles = BGTCap.CopyCoInst.NTx86
+AddReg    = BGTCap.CoInstaller_AddReg.NTx86
+
+[BGTCap.CoInstaller_AddReg.NTx86]
+HKR,,CoInstallers32,0x00010000,"716xCoInstaller.dll, CoInstallerEntry"
+
+[BGTCap.NTx86]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTx86, BGTCap.CopyDll.NTx86, BGTCap.CopyBSL.NTx86
+AddReg        = BGTCap.AddReg.NTx86
+RegisterDlls  = BGTCap.Register.NTx86
+
+[BGT7231_0001.NTx86]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTx86, BGTCap.CopyDll.NTx86, BGT7231_0001.CopyBSL.NTx86
+AddReg        = BGTCap.AddReg.NTx86
+RegisterDlls  = BGTCap.Register.NTx86
+
+[BGT7231_0002.NTx86]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTx86, BGTCap.CopyDll.NTx86, BGT7231_0002.CopyBSL.NTx86
+AddReg        = BGTCap.AddReg.NTx86
+RegisterDlls  = BGTCap.Register.NTx86
+
+[BGT7231_0003.NTx86]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTx86, BGTCap.CopyDll.NTx86, BGT7231_0003.CopyBSL.NTx86
+AddReg        = BGTCap.AddReg.NTx86, BGT7231_0003.AddReg.NTx86
+RegisterDlls  = BGTCap.Register.NTx86
+
+[BGTCap.NTAMD64]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTAMD64, BGTCap.CopyDll.NTAMD64, BGTCap.CopyBSL.NTAMD64
+AddReg        = BGTCap.AddReg.NTAMD64
+RegisterDlls  = BGTCap.Register.NTAMD64
+
+[BGT7231_0001.NTAMD64]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTAMD64, BGTCap.CopyDll.NTAMD64, BGT7231_0001.CopyBSL.NTAMD64
+AddReg        = BGTCap.AddReg.NTAMD64
+RegisterDlls  = BGTCap.Register.NTAMD64
+
+[BGT7231_0002.NTAMD64]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTAMD64, BGTCap.CopyDll.NTAMD64, BGT7231_0002.CopyBSL.NTAMD64
+AddReg        = BGTCap.AddReg.NTAMD64
+RegisterDlls  = BGTCap.Register.NTAMD64
+
+[BGT7231_0003.NTAMD64]
+Include       = ks.inf, wdmaudio.inf, kscaptur.inf, bda.inf, machine.inf
+Needs         = KS.Registration, WDMAUDIO.Registration.NT, KSCAPTUR.Registration.NT, BDA.Installation.NT, PciASPMOptOut
+CopyFiles     = BGTCap.CopyFiles.NTAMD64, BGTCap.CopyDll.NTAMD64, BGT7231_0003.CopyBSL.NTAMD64
+AddReg        = BGTCap.AddReg.NTAMD64, BGT7231_0003.AddReg.NTAMD64
+RegisterDlls  = BGTCap.Register.NTAMD64
+
+[BGTCap.NTx86.Services]
+AddService = BGTCap, 0x00000002, BGTCap.ServiceInstall.NTx86, BGTCap.EventInstall.NTx86
+
+[BGT7231_0001.NTx86.Services]
+AddService = BGTCap, 0x00000002, BGTCap.ServiceInstall.NTx86, BGTCap.EventInstall.NTx86
+
+[BGT7231_0002.NTx86.Services]
+AddService = BGTCap, 0x00000002, BGTCap.ServiceInstall.NTx86, BGTCap.EventInstall.NTx86
+
+[BGT7231_0003.NTx86.Services]
+AddService = BGTCap, 0x00000002, BGTCap.ServiceInstall.NTx86, BGTCap.EventInstall.NTx86
+
+[BGTCap.NTAMD64.Services]
+AddService = BGTCap64, 0x00000002, BGTCap.ServiceInstall.NTAMD64, BGTCap.EventInstall.NTAMD64
+
+[BGT7231_0001.NTAMD64.Services]
+AddService = BGTCap64, 0x00000002, BGTCap.ServiceInstall.NTAMD64, BGTCap.EventInstall.NTAMD64
+
+[BGT7231_0002.NTAMD64.Services]
+AddService = BGTCap64, 0x00000002, BGTCap.ServiceInstall.NTAMD64, BGTCap.EventInstall.NTAMD64
+
+[BGT7231_0003.NTAMD64.Services]
+AddService = BGTCap64, 0x00000002, BGTCap.ServiceInstall.NTAMD64, BGTCap.EventInstall.NTAMD64
+
+[BGTCap.ServiceInstall.NTx86]
+DisplayName   = %DISPLAY_NAME%
+Description   = %SERVICE_DESCRIPTION%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_IGNORE%
+ServiceBinary = %12%\BGTCap.sys
+
+[BGTCap.ServiceInstall.NTAMD64]
+DisplayName   = %DISPLAY_NAME%
+Description   = %SERVICE_DESCRIPTION%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_IGNORE%
+ServiceBinary = %12%\BGTCap64.sys
+
+[BGTCap.Register.NTx86]
+11,,BGTMV32.dll,1 ;FLG_REGSVR_DLLREGISTER
+
+[BGTCap.Register.NTAMD64]
+11,,BGTMV64.dll,1 ;FLG_REGSVR_DLLREGISTER
+
+[BGTCap.AddReg.NTx86]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,BGTCap.sys
+HKR,,CoInstallers32,0x00010008, "CIRCoInst.dll,IRCoInstaller"
+
+; Audio capture registry entries
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,BGTCap.SYS
+
+HKR,Drivers,SubClasses,,"wave,mixer"
+
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+
+HKR,Drivers\wave\wdmaud.drv,Description,, "BGT audio capture device"
+HKR,Drivers\mixer\wdmaud.drv,Description,,"BGT audio capture device"
+
+; add audio input and output pinnames
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_IN_PIN%, "Name",,"Analog Audio Input"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_OUT_PIN%,"Name",,"Audio"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_VIDEO_ITU_PIN%,"Name",,"Analog ITU Video"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_I2S_PIN%,"Name",,"I2S Audio"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_PIN%,    "Name",,"~Audio"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_VIDEO_PIN%,    "Name",,"~Capture"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_MPEG_PS_PIN%,       "Name",,"MPEG2 Program"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_RDS_PIN%,      "Name",,"RDS"
+
+[BGTCap.AddReg.NTAMD64]
+HKR,,DevLoader,,*NTKERN
+HKR,,NTMPDriver,,BGTCap64.sys
+HKR,,CoInstallers32,0x00010008, "CIRCoInst.dll,IRCoInstaller"
+
+; Audio capture registry entries
+HKR,,Driver,,BGTCap64.SYS
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+
+HKR,Drivers,SubClasses,,"wave,mixer"
+
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+
+HKR,Drivers\wave\wdmaud.drv,Description,, "BGT Audio Capture Device"
+HKR,Drivers\mixer\wdmaud.drv,Description,,"BGT Audio Capture Device"
+
+; add audio input and output pinnames
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_IN_PIN%, "Name",,"Analog Audio In"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_OUT_PIN%,"Name",,"Audio"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_VIDEO_ITU_PIN%,"Name",,"Analog ITU Video"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_I2S_PIN%,"Name",,"I2S Audio"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_VIDEO_PIN%,    "Name",,"Capture"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_AUDIO_PIN%,    "Name",,"~Audio"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_VIDEO_PIN%,    "Name",,"~Capture"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_MPEG_PS_PIN%,       "Name",,"MPEG2 Program"
+HKLM,SYSTEM\CurrentControlSet\Control\MediaCategories\%AVSTREAM_ANLG_RDS_PIN%,      "Name",,"RDS"
+
+[BGT7231_0003.AddReg.NTx86]
+HKR, "Parameters", "PowerSaveMode", 0x00010001, 1
+
+[BGT7231_0003.AddReg.NTAMD64]
+HKR, "Parameters", "PowerSaveMode", 0x00010001, 1
+
+[BGTCap.EventInstall.NTx86]
+AddReg = BGTCapEvent_AddReg.NTx86
+
+[BGTCap.EventInstall.NTAMD64]
+AddReg = BGTCapEvent_AddReg.NTAMD64
+
+[BGTCapEvent_AddReg.NTx86]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\BGTCap.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[BGTCapEvent_AddReg.NTAMD64]
+HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll;%%SystemRoot%%\System32\drivers\BGTCap64.sys"
+HKR,,TypesSupported,0x00010001,7
+
+;
+;*** strings, GUIDs and names
+;
+
+[Strings]
+; Our Pin Name GUIDs
+
+AVSTREAM_ANLG_AUDIO_IN_PIN   = "{7BB284B9-714D-493d-A101-B1B028E782BD}"
+AVSTREAM_ANLG_AUDIO_OUT_PIN  = "{5582E657-E596-42b5-9DB3-541B27A2355F}"
+AVSTREAM_ANLG_VIDEO_ITU_PIN  = "{82631A2E-403C-4581-A4B0-EC173D004410}"
+AVSTREAM_ANLG_AUDIO_I2S_PIN  = "{C2E46358-F032-4d88-B802-06B59D162730}"
+AVSTREAM_ANLG_VIDEO_PIN      = "{16FFBD0A-F770-4692-A2FF-DD394DFE9564}"
+AVSTREAM_ANLG_AUDIO_PIN      = "{BA9E27B1-CF44-490e-8EAB-5F662E5FFE74}"
+AVSTREAM_MPEG_PS_PIN         = "{DDA87B83-65DB-4aec-82D0-79FBE67D2BB6}"
+AVSTREAM_ANLG_RDS_PIN        = "{900337FB-8ED4-4d4e-B056-318DA76C72FF}"
+
+; system defines
+
+SERVICE_BOOT_START     = 0x0 
+SERVICE_SYSTEM_START   = 0x1 
+SERVICE_AUTO_START     = 0x2 
+SERVICE_DEMAND_START   = 0x3 
+SERVICE_DISABLED       = 0x4 
+
+SERVICE_KERNEL_DRIVER  = 0x1 
+SERVICE_ERROR_IGNORE   = 0x0 
+SERVICE_ERROR_NORMAL   = 0x1 
+SERVICE_ERROR_SEVERE   = 0x2
+SERVICE_ERROR_CRITICAL = 0x3 
+
+FLG_REGSVR_DLLREGISTER = 0x00000001
+
+;Our strings
+
+PROVIDER                 = "BlackGold Technology"
+60Hybrid.DeviceDesc      = "BGT 3540, BDA driver"
+61Hybrid.DeviceDesc      = "BGT 3540, BDA driver"
+62Hybrid.DeviceDesc      = "BGT 3540, BDA driver"
+31Hybrid.DeviceDesc      = "BGT 3540, BDA driver"
+31Hybrid.DeviceDesc_MINICARD    = "BGT6100 Hybrid Device (Mini Card)"
+AVSTRM_INSTALLATION_DISK = "BGT installation disk"
+DISPLAY_NAME             = "BGT capture service"
+SERVICE_DESCRIPTION      = "BGT PCIe capture driver"
