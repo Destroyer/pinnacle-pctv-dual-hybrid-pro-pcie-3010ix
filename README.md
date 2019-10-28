@@ -1,6 +1,9 @@
-#Windows 10 compatible driver for Pinnacle Dual Hybrid Pro PCIe 3010ix
+# Windows 10 compatible driver for Pinnacle Dual Hybrid Pro PCIe 3010ix
+## Notice
+These steps are required in order to get this card working with Windows Media center from mydigitallife forums. 
+If you want to use the official app [it should be possible](https://github.com/Destroyer/pinnacle-pctv-dual-hybrid-pro-pcie-3010ix/issues/1) with this version [ftp://ftp.pctvsystems.com/TV/application/TVC6/PCTVSystems_TVCenter_Setup_6.4.9.1033.exe](ftp://ftp.pctvsystems.com/TV/application/TVC6/PCTVSystems_TVCenter_Setup_6.4.9.1033.exe) .
 
-##Installation
+## Installation
 1. Remove the current driver via the Device manager.
 2. Download the repo and extract it
 3. Right click on BGTCap.inf and click Install
